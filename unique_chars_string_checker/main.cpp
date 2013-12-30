@@ -1,5 +1,5 @@
 // Implement an algorithm to determine if a string has all unique characters.
-// Assumptions: character set is in ASCII
+// Assumptions: character set is in ASCII (8-bit)
 #include <iostream>
 using std::cout;
 using std::cin;
@@ -40,7 +40,7 @@ bool isUniqueChars(string str)
 	}
 
 	int charVal;
-	bool charSet[256] = {0}; // character set initially set to false
+	bool charSet[256] = {0}; // character set initially set to 0
 
 	// loop through the string setting the characters found in the string
 	for(unsigned i = 0; i < str.length(); i++) {
